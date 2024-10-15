@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enhanced Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div id="display" class="screen">0</div>
+        <section id="btn-session">
+            <button class="btn btn-grey" onclick="memoryClear()">MC</button>
+            <button class="btn btn-grey" onclick="memoryRecall()">MR</button>
+            <button class="btn btn-grey" onclick="memorySubtract()">M-</button>
+            <button class="btn btn-grey" onclick="memoryAdd()">M+</button>
+            <button class="btn btn-grey" onclick="clearDisplay()">CE</button>
+            <button class="btn btn-grey" onclick="squareRoot()">√x</button>
+            <button class="btn btn-grey" onclick="percent()">%</button>
+            <button class="btn btn-yellow" onclick="operation('/')">÷</button>
+            <button class="btn" onclick="inputNumber('7')">7</button>
+            <button class="btn" onclick="inputNumber('8')">8</button>
+            <button class="btn" onclick="inputNumber('9')">9</button>
+            <button class="btn btn-yellow" onclick="operation('*')">x</button>
+            <button class="btn" onclick="inputNumber('4')">4</button>
+            <button class="btn" onclick="inputNumber('5')">5</button>
+            <button class="btn" onclick="inputNumber('6')">6</button>
+            <button class="btn btn-yellow" onclick="operation('-')">-</button>
+            <button class="btn" onclick="inputNumber('1')">1</button>
+            <button class="btn" onclick="inputNumber('2')">2</button>
+            <button class="btn" onclick="inputNumber('3')">3</button>
+            <button class="btn btn-yellow" onclick="operation('+')">+</button>
+            <button class="btn" onclick="inputNumber('0')">0</button>
+            <button class="btn" onclick="inputDecimal()">.</button>
+            <button class="btn" onclick="toggleSign()">+/-</button>
+            <button class="btn btn-yellow" onclick="calculate()">=</button>
+            <button class="btn btn-grey" onclick="pi()">π</button>
+            <button class="btn btn-grey" onclick="operation('^')">x<sup>y</sup></button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
