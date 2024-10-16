@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Define character encoding and viewport settings for mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file for styling the calculator -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Title of the calculator application -->
     <title>Enhanced Calculator</title>
 </head>
+
 <body>
+    <!-- Main container for the calculator UI -->
     <div class="container">
+        
+        <!-- Display section for showing the calculator result -->
         <div id="display" class="screen">0</div>
+
+        <!-- Button section containing all calculator buttons -->
         <section id="btn-session">
+            <!-- Memory Clear (MC) button -->
             <button class="btn btn-grey" onclick="memoryClear()">MC</button>
+
+            <!-- Memory Recall (MR) button -->
             <button class="btn btn-grey" onclick="memoryRecall()">MR</button>
+
+            <!-- Memory Subtract (M-) button -->
             <button class="btn btn-grey" onclick="memorySubtract()">M-</button>
+
+            <!-- Memory Add (M+) button -->
             <button class="btn btn-grey" onclick="memoryAdd()">M+</button>
+
+            <!-- Clear Entry (CE) button to clear the display -->
             <button class="btn btn-grey" onclick="clearDisplay()">CE</button>
+
+            <!-- Square root (√x) button -->
             <button class="btn btn-grey" onclick="squareRoot()">√x</button>
+
+            <!-- Percent (%) button -->
             <button class="btn btn-grey" onclick="percent()">%</button>
+
+            <!-- Division (÷) operator button -->
             <button class="btn btn-yellow" onclick="operation('/')">÷</button>
+
+            <!-- Number buttons -->
             <button class="btn" onclick="inputNumber('7')">7</button>
             <button class="btn" onclick="inputNumber('8')">8</button>
             <button class="btn" onclick="inputNumber('9')">9</button>
+
+            <!-- Multiplication (x) operator button -->
             <button class="btn btn-yellow" onclick="operation('*')">x</button>
+
+            <!-- Number buttons -->
             <button class="btn" onclick="inputNumber('4')">4</button>
             <button class="btn" onclick="inputNumber('5')">5</button>
             <button class="btn" onclick="inputNumber('6')">6</button>
+
+            <!-- Subtraction (-) operator button -->
             <button class="btn btn-yellow" onclick="operation('-')">-</button>
+
+            <!-- Number buttons -->
             <button class="btn" onclick="inputNumber('1')">1</button>
             <button class="btn" onclick="inputNumber('2')">2</button>
             <button class="btn" onclick="inputNumber('3')">3</button>
+
+            <!-- Addition (+) operator button -->
             <button class="btn btn-yellow" onclick="operation('+')">+</button>
+
+            <!-- Zero (0) button -->
             <button class="btn" onclick="inputNumber('0')">0</button>
+
+            <!-- Decimal point button -->
             <button class="btn" onclick="inputDecimal()">.</button>
+
+            <!-- Toggle sign button to change between positive and negative -->
             <button class="btn" onclick="toggleSign()">+/-</button>
+
+            <!-- Equals (=) button to perform the calculation -->
             <button class="btn btn-yellow" onclick="calculate()">=</button>
+
+            <!-- Pi (π) button -->
             <button class="btn btn-grey" onclick="pi()">π</button>
+
+            <!-- Exponentiation (x^y) operator button -->
             <button class="btn btn-grey" onclick="operation('^')">x<sup>y</sup></button>
         </section>
     </div>
+
+    <!-- External JavaScript file for handling calculator logic -->
     <script src="script.js"></script>
 </body>
 </html>
