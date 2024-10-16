@@ -1,68 +1,77 @@
+/* Body styling: center the calculator on the page */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #333;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    display: flex; /* Use Flexbox to position elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #333; /* Dark background for contrast */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set font for the whole page */
 }
 
+/* Container styling: for the calculator body */
 .container {
-    width: 260px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 260px; /* Set fixed width for the calculator */
+    background-color: #f7f7f7; /* Light background for the calculator */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
+/* Screen styling: for the display area of the calculator */
 .screen {
-    height: 60px;
-    background-color: #ffffff;
-    border: 1px solid #e2e1e1;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-size: 1.8rem;
-    text-align: right;
-    line-height: 60px;
-    color: #333;
-    overflow: hidden;
-    box-sizing: border-box;
+    height: 60px; /* Height of the display */
+    background-color: #ffffff; /* White background for the display */
+    border: 1px solid #e2e1e1; /* Light border around the display */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0 10px; /* Padding inside the display */
+    font-size: 1.8rem; /* Large font size for visibility */
+    text-align: right; /* Align text to the right */
+    line-height: 60px; /* Vertically center the text */
+    color: #333; /* Dark text color for contrast */
+    overflow: hidden; /* Prevent overflow of long numbers */
+    box-sizing: border-box; /* Include padding and border in element's width/height */
 }
 
+/* Button grid layout */
 #btn-session {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 15px;
+    display: grid; /* Use grid layout for buttons */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px; /* Space above the button section */
 }
 
+/* General button styling */
 .btn {
-    height: 50px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #e2e1e1;
-    color: #333;
-    transition: background-color 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50px; /* Height of each button */
+    font-size: 1.2rem; /* Button text size */
+    border: none; /* Remove default button borders */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Show pointer on hover */
+    background-color: #e2e1e1; /* Default light gray background */
+    color: #333; /* Dark text color */
+    transition: background-color 0.2s; /* Smooth background color transition on hover */
+    display: flex; /* Use Flexbox to center content */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
 }
 
+/* Button active state: scale down slightly when clicked */
 .btn:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* Make the button appear pressed */
 }
 
+/* Special styling for yellow buttons (operators like +, =, etc.) */
 .btn-yellow {
-    background-color: #ffcc02;
+    background-color: #ffcc02; /* Bright yellow background */
 }
 
+/* Hover state for yellow buttons */
 .btn-yellow:hover {
-    background-color: #f4b601;
+    background-color: #f4b601; /* Slightly darker yellow on hover */
 }
 
+/* Special styling for grey buttons (memory functions, etc.) */
 .btn-grey {
-    background-color: #e2e1e1;
+    background-color: #e2e1e1; /* Light gray background for less important buttons */
 }
